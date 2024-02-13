@@ -1,0 +1,150 @@
+.product-card {
+  // General Styles
+  display: flex;
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    button {
+      padding: 0 1rem;
+    }
+  }
+
+  h3 {
+    color: #d87d4a;
+  }
+
+  img {
+    border-radius: 0.25rem;
+  }
+  .add-to-cart-button {
+    margin-left: 2rem;
+  }
+
+  .product-text {
+    display: flex;
+  }
+
+  .flipImg {
+    order: 5;
+  }
+
+  // Small Screens
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem auto;
+
+    button {
+      margin: 1rem auto;
+      width: 50%;
+    }
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin: 1rem 0;
+    }
+
+    h3 {
+      letter-spacing: 0.4em;
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    .flipImg {
+      order: 0;
+    }
+
+    .product-text {
+      flex-direction: column;
+    }
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    flex-direction: column;
+    text-align: center;
+    margin: 4rem auto;
+
+    button {
+      margin: 1rem auto;
+      width: 50%;
+    }
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      margin: 1rem 0;
+    }
+
+    h3 {
+      letter-spacing: 0.4em;
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    .flipImg {
+      order: 0;
+    }
+
+    .product-text {
+      flex-direction: column;
+    }
+  }
+
+  // Large Screens
+  @media screen and (min-width: 960px) {
+    margin: 6rem 0;
+
+    h2 {
+      font-size: 3rem;
+      letter-spacing: 0.25rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+      letter-spacing: 1.2rem;
+    }
+
+    img {
+      width: 35vw;
+      margin-right: 5rem;
+    }
+
+    p {
+      line-height: 2rem;
+      padding: 1.5rem 0;
+    }
+
+    .product-text {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      margin-left: 5rem;
+    }
+
+    .flipImg {
+      margin-left: 5rem;
+      margin-right: 0;
+    }
+
+    .flipText {
+      margin-left: 0;
+      margin-right: 5rem;
+    }
+  }
+}

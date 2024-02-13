@@ -1,0 +1,33 @@
+.cart-image-title {
+  // General Styles
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    color: rgb(128, 128, 128);
+    margin-bottom: 0;
+  }
+
+  .cart-item-image {
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  // Small Screens
+  @media screen and (max-width: 600px) {
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+  }
+
+  // Large Screens
+  @media screen and (min-width: 960px) {
+  }
+}
+
+.summary-item {
+  justify-content: flex-start;
+}

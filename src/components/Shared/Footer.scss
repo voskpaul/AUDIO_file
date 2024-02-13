@@ -1,0 +1,156 @@
+#footer {
+  // General Styles
+  background-color: #101010;
+  color: white;
+  display: flex;
+
+  p {
+    color: rgb(141, 141, 141);
+  }
+
+  #footer-container,
+  #footer-text,
+  #footer-links {
+    display: flex;
+  }
+
+  #footer-links .navbar {
+    padding: 0;
+    padding-top: 0.312rem;
+  }
+
+  #orange-bar {
+    background-color: #d87d4a;
+    width: 100px;
+    height: 5px;
+  }
+
+  .navigation-link {
+    text-decoration: none;
+    padding: 0;
+  }
+
+  // Small Screens
+  @media screen and (max-width: 600px) {
+    text-align: center;
+
+    .navigation-link {
+      margin: 0.5rem 0;
+    }
+
+    .social-link {
+      margin: 0 0.5rem;
+    }
+    #footer-container {
+      padding: 2rem 1rem;
+    }
+
+    #footer-container,
+    #footer-text,
+    #footer-links,
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #footer-logo,
+    #footer-links,
+    #social-links {
+      margin: 1rem 0;
+    }
+
+    #orange-bar {
+      margin: 0 auto;
+    }
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    padding-bottom: 2rem;
+
+    .navigation-link {
+      padding-left: 2rem;
+    }
+
+    .social-link {
+      margin-left: 1rem;
+    }
+
+    #footer-container,
+    #footer-text,
+    #footer-links {
+      justify-content: space-between;
+    }
+
+    #footer-container {
+      margin: 3rem 0;
+    }
+
+    #footer-text,
+    #footer-links {
+      flex-direction: column;
+    }
+
+    #footer-text,
+    #footer-links {
+      width: 45%;
+    }
+
+    #footer-logo {
+      padding-bottom: 2rem;
+    }
+
+    #footer-links {
+      align-items: flex-end;
+    }
+
+    #orange-bar {
+      margin-left: 0.25rem;
+    }
+  }
+
+  // Large Screens
+  @media screen and (min-width: 960px) {
+    padding-bottom: 2rem;
+
+    .navigation-link {
+      padding-left: 2rem;
+    }
+
+    .social-link {
+      margin-left: 1rem;
+    }
+
+    #footer-container,
+    #footer-text,
+    #footer-links {
+      justify-content: space-between;
+    }
+
+    #footer-container {
+      margin: 3rem 0;
+    }
+
+    #footer-text,
+    #footer-links {
+      flex-direction: column;
+    }
+
+    #footer-text,
+    #footer-links {
+      width: 45%;
+    }
+
+    #footer-logo {
+      padding-bottom: 2rem;
+    }
+
+    #footer-links {
+      align-items: flex-end;
+    }
+
+    #orange-bar {
+      margin-left: 0.25rem;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.navigation {
+  // General Styles
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+
+  font-size: 0.8rem;
+
+  padding: 1rem 0;
+
+  background-color: #1a1a1a;
+
+  z-index: 10;
+
+  button,
+  button:hover {
+    background-color: transparent;
+  }
+
+  button {
+    padding: 0;
+  }
+
+  #brand {
+    color: white;
+  }
+
+  #nav-links a {
+    text-decoration: none;
+  }
+
+  // Small & Medium Screens
+  @media screen and (max-width: 960px) {
+    .nav-links {
+      display: none;
+    }
+
+    #cart-icon {
+      margin: 0 1rem;
+    }
+
+    #hamburger-icon {
+      background-image: url("../../assets/images/mobile/icon-hamburger.svg");
+      background-color: black;
+      height: 15px;
+      width: 40px;
+      margin: 0 1rem;
+      z-index: 10;
+    }
+
+    #logo {
+      margin: 0 auto;
+    }
+  }
+
+  // Large Screens
+  @media screen and (min-width: 960px) {
+    .nav-links {
+      margin: auto;
+    }
+
+    #hamburger-icon {
+      width: 0;
+      padding: 0;
+      margin: 0;
+      height: 0;
+      display: none;
+    }
+  }
+}
+
+.navigation-link {
+  color: white;
+  padding-right: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navigation-link:hover {
+  color: #d87d4a;
+}

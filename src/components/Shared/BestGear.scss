@@ -1,0 +1,79 @@
+#best-gear {
+  // General Styles
+  display: flex;
+
+  h2 {
+    text-transform: uppercase;
+
+    span {
+      color: #d87d4a;
+    }
+  }
+
+  p {
+    color: rgb(141, 141, 141);
+  }
+
+  #best-gear-img {
+    border-radius: 0.25rem;
+  }
+  // Small Screens
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    margin: 15vh 0;
+
+    #best-gear-img {
+      order: -1;
+    }
+
+    #best-gear-text {
+      text-align: center;
+    }
+
+    h2 {
+      margin: 2rem 0;
+    }
+  }
+
+  // Medium Screens
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    flex-direction: column;
+
+    margin: 15vh 0;
+
+    h2 {
+      margin: 2rem 0;
+    }
+
+    #best-gear-img {
+      order: -1;
+    }
+
+    #best-gear-text {
+      text-align: center;
+    }
+  }
+
+  // Large Screens
+  @media screen and (min-width: 960px) {
+    margin-bottom: 20vh;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-top: 2rem;
+    }
+
+    #best-gear-img,
+    #best-gear-text {
+      width: 44%;
+    }
+  }
+}
